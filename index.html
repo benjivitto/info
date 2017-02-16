@@ -6,7 +6,7 @@
 <body>
   <h1>My super site</h1>
   
-  <div id="map" style="width:400px;height:400px;background:yellow"></div>
+  <div id="map" style="position:center;width:400px;height:400px;background:yellow"></div>
   
   <script>
   function myMap() {
@@ -15,7 +15,7 @@
       zoom: 10,
       mapTypeId: google.maps.MapTypeId.HYBRID
     }
-    var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+    var myCenter = new google.maps.LatLng(51.5,-0.12);
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     var marker = new google.maps.Marker({position:myCenter});
     marker.setMap(map);
